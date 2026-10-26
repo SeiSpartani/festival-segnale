@@ -1,16 +1,16 @@
-/* Stile iniziale: tipografia, colori e variabili CSS sono già predisposti.
-   Lavoreremo su collegamenti, CSS condiviso e disposizione delle schede. */
+/* Stile del festival Segnale */
 
-/* Scelte comuni: ogni regola usa var() per richiamarne il valore. */
 :root {
-  --colore-primario: #245c49;
-  --colore-primario-scuro: #173f32;
+  /* Personalizzazione colori principale e variante hover */
+  --colore-primario: #235e7c;
+  --colore-primario-scuro: #072a3c;
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
   --font-testo: Arial, Helvetica, sans-serif;
   --font-titoli: Georgia, "Times New Roman", serif;
 }
 
+/* Selettore universale corretto per il box-model */
 * {
   box-sizing: border-box;
 }
@@ -133,6 +133,7 @@ h3 {
 
 .button-link:hover {
   background: var(--colore-primario-scuro);
+  color: #ffffff;
 }
 
 .content-section {
@@ -156,13 +157,13 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-/* Regola base per mobile/schermi stretti: layout lineare a 1 colonna */
+/* Base Mobile (< 600px): Layout ad una singola colonna */
 .event-grid {
   display: block;
 }
 
 .event-card {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   overflow: hidden;
   border: 1px solid #b7c0b7;
   border-radius: 0.75rem;
@@ -175,8 +176,9 @@ h3 {
   height: auto;
 }
 
+/* Modifica spaziatura: personalizzato il padding interno della scheda */
 .event-body {
-  padding: 1.25rem;
+  padding: 1.5rem;
 }
 
 .event-body p:last-child {
@@ -208,15 +210,23 @@ h3 {
   top: 1rem;
 }
 
-/* Attivazione griglia a 2 colonne dai 600px (37.5rem) in su */
+/* Media Query 1: Da 600px a 1023px (37.5rem - 63.9375rem) -> 2 colonne */
 @media (min-width: 37.5rem) {
   .event-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1.75rem;
   }
 
   .event-grid .event-card {
     margin-bottom: 0;
+  }
+}
+
+/* Media Query 2: Da 1024px in su (64rem) -> 3 colonne */
+@media (min-width: 64rem) {
+  .event-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
