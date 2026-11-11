@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Info e luoghi — Segnale</title>
+  <!-- Caricamento Carattere Web Redaction 35 da Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Redaction+35:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <!-- CSS Swiper 14.4.0 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
@@ -28,15 +32,12 @@
       <p class="lead">Esplora le tre sedi del festival e pianifica il tuo percorso a Torino.</p>
     </section>
 
-    <!-- Galleria Fotografica con Swiper 14.4.0 -->
     <section class="content-section" aria-labelledby="titolo-galleria">
       <h2 id="titolo-galleria">I luoghi del festival</h2>
       <p class="reading-text">Scopri gli spazi di Torino che ospiteranno incontri, laboratori e mostre del festival immaginario Segnale.</p>
       
       <div class="swiper galleria-luoghi">
         <div class="swiper-wrapper">
-          
-          <!-- Slide 1: Sede Centrale -->
           <div class="swiper-slide">
             <figure class="slide-card">
               <img src="assets/luoghi/sede-centrale.jpg" alt="Ingresso principale e facciata della Sede centrale del Politecnico di Torino in Corso Duca degli Abruzzi" width="1200" height="800">
@@ -47,7 +48,6 @@
             </figure>
           </div>
 
-          <!-- Slide 2: Politecnico al Valentino -->
           <div class="swiper-slide">
             <figure class="slide-card">
               <img src="assets/luoghi/politecnico-valentino.jpg" alt="Vista del cortile e dell'architettura storica del Politecnico al Valentino" width="1200" height="800">
@@ -58,7 +58,6 @@
             </figure>
           </div>
 
-          <!-- Slide 3: Sede di Mirafiori -->
           <div class="swiper-slide">
             <figure class="slide-card">
               <img src="assets/luoghi/mirafiori.jpg" alt="Struttura moderna ed esterna del Centro Design presso la sede di Mirafiori" width="1200" height="800">
@@ -68,16 +67,13 @@
               </figcaption>
             </figure>
           </div>
-
         </div>
 
-        <!-- Pulsanti di navigazione Swiper -->
         <button type="button" class="swiper-button-prev" aria-label="Fotografia precedente"></button>
         <button type="button" class="swiper-button-next" aria-label="Fotografia successiva"></button>
       </div>
     </section>
 
-    <!-- Mappa e Indirizzi -->
     <section class="content-section" aria-labelledby="titolo-mappa">
       <h2 id="titolo-mappa">Come arrivare</h2>
       <p class="reading-text">Tutte le sedi si trovano a Torino. Consulta la mappa per localizzare le tre sedi e trovare i percorsi più comodi.</p>
@@ -85,10 +81,10 @@
       <div class="map-wrapper">
         <iframe id="mappa-sedi"
           title="Mappa delle tre sedi di riferimento per il festival Segnale a Torino"
-          src="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528"></iframe>
+          src="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&miniMapControl=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#12/45.0465/7.6528"></iframe>
         
         <p class="map-link-container">
-          <a class="button-link map-fullscreen-link" href="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528" target="_blank" rel="noopener noreferrer">Visualizza la mappa a schermo intero</a>
+          <a class="button-link map-fullscreen-link" href="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&miniMapControl=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#12/45.0465/7.6528" target="_blank" rel="noopener noreferrer">Visualizza la mappa a schermo intero</a>
         </p>
       </div>
 
@@ -118,7 +114,6 @@
     </div>
   </footer>
 
-  <!-- JS Swiper 14.4.0 -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.galleria-luoghi', {

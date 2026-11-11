@@ -6,11 +6,13 @@
   --colore-primario-scuro: #072a3c;
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
+
+  /* Carattere web Redaction 35 per i titoli + fallback */
+  --font-titoli: "Redaction 35", Georgia, "Times New Roman", serif;
   --font-testo: Arial, Helvetica, sans-serif;
-  --font-titoli: Georgia, "Times New Roman", serif;
 }
 
-/* Selettore universale corretto per il box-model */
+/* Selettore universale per il box-model */
 * {
   box-sizing: border-box;
 }
@@ -43,13 +45,19 @@ a:focus-visible {
   margin: 0 auto;
 }
 
+/* --- Intestazione Sticky --- */
 .site-header {
-  padding: 1.25rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--colore-sfondo);
+  padding: 1rem 0;
   border-bottom: 4px solid var(--colore-primario);
 }
 
 .brand {
   display: inline-block;
+  font-family: var(--font-titoli);
   color: var(--colore-testo);
   font-size: 1.75rem;
   font-weight: bold;
@@ -64,22 +72,26 @@ a:focus-visible {
   font-weight: normal;
 }
 
+/* --- Menu responsive --- */
 nav {
   margin-top: 1rem;
 }
 
 nav a {
-  display: inline-block;
-  margin-right: 1rem;
-  padding: 0.25rem 0;
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.05rem;
+  text-decoration: none;
 }
 
 nav a[aria-current="page"] {
   font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .intro {
-  padding: 3rem 0 1rem;
+  padding: 2.5rem 0 1rem;
 }
 
 .eyebrow,
@@ -157,7 +169,6 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-/* Base Mobile (< 600px): Layout ad una singola colonna */
 .event-grid {
   display: block;
 }
@@ -176,7 +187,6 @@ h3 {
   height: auto;
 }
 
-/* Modifica spaziatura: personalizzato il padding interno della scheda */
 .event-body {
   padding: 1.5rem;
 }
@@ -204,14 +214,21 @@ h3 {
   padding: 0.75rem 1rem;
   background: #ffffff;
   color: var(--colore-testo);
+  z-index: 2000;
 }
 
 .skip-link:focus {
   top: 1rem;
 }
 
-/* Media Query 1: Da 600px a 1023px (37.5rem - 63.9375rem) -> 2 colonne */
+/* Da 600px in su (37.5rem) */
 @media (min-width: 37.5rem) {
+  nav a {
+    display: inline-block;
+    margin-right: 1.5rem;
+    padding: 0.25rem 0;
+  }
+
   .event-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -223,15 +240,15 @@ h3 {
   }
 }
 
-/* Media Query 2: Da 1024px in su (64rem) -> 3 colonne */
+/* Da 1024px in su (64rem) */
 @media (min-width: 64rem) {
   .event-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 }
-/* --- Moduli Swiper, Galleria e Mappa (Info e luoghi) --- */
 
+/* --- Moduli Swiper, Galleria e Mappa --- */
 .galleria-luoghi {
   width: 100%;
   margin-top: 1.5rem;
@@ -270,7 +287,6 @@ h3 {
   color: #46564b;
 }
 
-/* Colore pulsanti Swiper in linea con la palette */
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--colore-primario);
@@ -282,7 +298,6 @@ h3 {
   outline-offset: 4px;
 }
 
-/* Stili per Mappa e Indirizzi */
 .map-wrapper {
   margin-top: 1.5rem;
 }
