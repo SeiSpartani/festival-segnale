@@ -337,3 +337,31 @@ h3 {
   font-size: 0.875rem;
   font-weight: bold;
 }
+
+/* --- Riquadro Meteo (Info e luoghi) --- */
+.weather-box {
+  margin-top: 1.25rem;
+  padding: 1.5rem;
+  max-width: 36rem;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.weather-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.weather-list li {
+  margin-bottom: 0.5rem;
+}
+
+.weather-source {
+  margin-bottom: 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid #d8d2c5;
+  color: #46564b;
+  font-size: 0.875rem;
+}

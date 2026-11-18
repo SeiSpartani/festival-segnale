@@ -11,6 +11,8 @@
   <!-- CSS Swiper 14.4.0 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js" defer></script>
+  <script src="info.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
@@ -106,6 +108,24 @@
         </ul>
       </div>
     </section>
+
+    <!-- Sezione Meteo a Torino adesso -->
+    <section class="content-section" aria-labelledby="titolo-meteo">
+      <h2 id="titolo-meteo">Meteo a Torino adesso</h2>
+      <p class="reading-text">Condizioni meteorologiche attuali rilevate oggi a Torino (non costituiscono una previsione per le date del festival).</p>
+
+      <div class="weather-box">
+        <p id="stato-meteo" role="status" aria-live="polite">Caricamento dei dati meteo in corso…</p>
+        <ul id="dati-meteo" class="weather-list" hidden>
+          <li><strong>Temperatura:</strong> <span id="meteo-temperatura"></span></li>
+          <li><strong>Vento:</strong> <span id="meteo-vento"></span></li>
+          <li><strong>Ora del dato:</strong> <span id="meteo-ora"></span></li>
+        </ul>
+        <p class="weather-source">
+          Dati meteo: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a>, licenza <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -113,16 +133,5 @@
       <p>Segnale · Progetto didattico · Festival immaginario</p>
     </div>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.galleria-luoghi', {
-      loop: false,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
 </body>
 </html>

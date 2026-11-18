@@ -11,6 +11,28 @@
     "sede_id": 1
   },
   {
+    "id": 2,
+    "titolo": "Materia seconda",
+    "data": "2026-06-12",
+    "orario": "14:00",
+    "categoria": "Laboratorio",
+    "descrizione": "Un laboratorio per osservare materiali di recupero e immaginare nuovi utilizzi attraverso piccoli esperimenti.",
+    "immagine": "assets/materia-seconda.svg",
+    "immagine_alt": "Forme sovrapposte che richiamano campioni di materiali",
+    "sede_id": 2
+  },
+  {
+    "id": 3,
+    "titolo": "La città in un manifesto",
+    "data": "2026-06-12",
+    "orario": "17:00",
+    "categoria": "Mostra",
+    "descrizione": "Una raccolta di manifesti immaginari racconta quartieri, incontri e abitudini della città attraverso forme e colori.",
+    "immagine": "assets/citta-manifesto.svg",
+    "immagine_alt": "Rettangoli colorati compongono una città astratta.",
+    "sede_id": 3
+  },
+  {
     "id": 4,
     "titolo": "Oggetti in dialogo",
     "data": "2026-06-13",
@@ -20,5 +42,27 @@
     "immagine": "assets/oggetti-dialogo.svg",
     "immagine_alt": "Due forme geometriche si fronteggiano sopra una linea comune.",
     "sede_id": 1
+  },
+  {
+    "id": 5,
+    "titolo": "Mappe da abitare",
+    "data": "2026-06-13",
+    "orario": "14:00",
+    "categoria": "Laboratorio",
+    "descrizione": "Disegniamo una mappa fatta di percorsi, punti di incontro e luoghi da riscoprire, partendo dall'esperienza di chi li attraversa.",
+    "immagine": "assets/mappe-abitare.svg",
+    "immagine_alt": "Un percorso collega tre punti su una mappa geometrica.",
+    "sede_id": 2
+  },
+  {
+    "id": 6,
+    "titolo": "Progettare insieme",
+    "data": "2026-06-13",
+    "orario": "17:00",
+    "categoria": "Mostra",
+    "descrizione": "Esposizione finale dei lavori realizzati durante i laboratori del festival e momenti di confronto tra i partecipanti.",
+    "immagine": "assets/progettare-insieme.svg",
+    "immagine_alt": "Moduli di colori diversi si incastrano in una composizione comune.",
+    "sede_id": 3
   }
 ]
