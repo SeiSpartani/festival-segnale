@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "titolo": "Lettere in movimento",
+    "data": "2026-06-12",
+    "orario": "10:00",
+    "categoria": "Incontro",
+    "descrizione": "Come cambia un messaggio quando cambiano le lettere? Un incontro su tipografia, ritmo e comunicazione visiva.",
+    "immagine": "assets/lettere-in-movimento.svg",
+    "immagine_alt": "Lettere geometriche disposte su una griglia",
+    "sede_id": 1
+  },
+  {
+    "id": 4,
+    "titolo": "Oggetti in dialogo",
+    "data": "2026-06-13",
+    "orario": "10:00",
+    "categoria": "Incontro",
+    "descrizione": "Designer e artigiani discutono come nascono gli oggetti quotidiani, tra funzione, cura dei dettagli e possibilità di riparazione.",
+    "immagine": "assets/oggetti-dialogo.svg",
+    "immagine_alt": "Due forme geometriche si fronteggiano sopra una linea comune.",
+    "sede_id": 1
+  }
+]
